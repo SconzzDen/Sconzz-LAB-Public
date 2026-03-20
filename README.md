@@ -1,39 +1,19 @@
-# ⚡ Sconzz LAB | Solana Quantitative Architecture
+# ⚡️ Sconzz LAB: Open-Source Execution Shell (Legacy V3)
 
-A complete, high-frequency quantitative trading floor built for the SOL/USDT market. Engineered by **Sconzz LAB**, this architecture features a Node.js execution engine, two distinct Python-based trading algorithms, and a built-in hyper-optimization lab for continuous backtesting. 
+> **"Patience is a weapon. Speed is the execution."**
 
-📍 **Base:** London, UK 🇬🇧
+Welcome to the Sconzz LAB public Showroom. This repository contains our baseline, open-source algorithmic trading shell, designed for quantitative research and structural backtesting.
 
----
+## 🏛️ The Architecture
+This public repository features our legacy V3 structural framework. It utilizes a standard, synchronous Python execution loop suitable for basic technical analysis (RSI/Bollinger) and integration with standard CEX testnets.
 
-## 🏗️ System Architecture
+## ⚠️ The V4 Hybrid Grid (VIP Only)
+While this public shell is fully functional for educational purposes, **it is not the architecture currently trading live on our node.** To eliminate PM2 routing latency and Node.js overhead, Sconzz LAB operates on a proprietary **V4 Flat-Grid Architecture**. The live system executes on a decentralized mobile-node, utilizing:
+* **100x Rubber Band (Async):** High-tension mean-reversion engine.
+* **V4 Scalper:** Sub-second liquidity sweep detection.
+* **Bare-Metal Routing:** Zero-directory-friction for instantaneous Solana Mainnet execution via Jupiter Perps.
 
-The Sconzz LAB ecosystem is split into three main layers:
-1. **The Execution Engine (server.js):** A Node.js backend that handles transaction routing, metric tracking, and the "Paper Trading" safety switch.
-2. **The 100x Degen Bot (strategy_template.py):** An aggressive, 3-minute timeframe mean-reversion algorithm designed for choppy market regimes.
-3. **The 20x Sniper Bot (strategy_template.py):** A highly precise, 5-minute timeframe liquidity sweep algorithm designed for institutional-style scalping.
+*Note: The V4 engines and auto-compounding telemetry scripts are strictly reserved for the Sconzz LAB VIP Command Channel. We do not provide public support for optimizing this V3 shell for sub-second execution.*
 
-*(Note: Proprietary alpha, optimization parameters, and API keys are strictly vaulted and not included in this public repository).*
-
-### 🚀 Key Features
-* **Dual-Speed Risk Manager:** Bots operate in "Hunter Mode" (checking charts every 15s) until they enter a trade, instantly shifting into "Sniper Mode" (checking live price every 2s) to execute risk management with absolute precision.
-* **Auto-Compounding:** Automatically reinvests 50% of trade profits into the base trade size for exponential capital growth.
-* **Hyper-Optimization Lab:** Custom Python scripts that backtest hundreds of configurations against thousands of historical candles to find the highest-yielding statistical edge.
-* **Telegram Integration:** Real-time trade execution alerts, status polling, and live PnL tracking.
-
----
-
-## 🛠️ Infrastructure
-
-**Tech Stack:** Node.js | Python 3 | PM2 | Pandas-TA
-**Environment:** Lightweight Linux/Termux headless server.
-
-*This repository serves as a structural demonstration of the Sconzz LAB trading architecture.*
-
----
-## ⚠️ Legal Disclaimer
-**Sconzz LAB architecture is provided for educational and structural demonstration purposes only.**
-
-This repository does not constitute financial advice, investment advice, or trading advice. Trading cryptocurrencies, especially using high-leverage perpetual contracts (Perps), involves a significant risk of capital loss. The creators of Sconzz LAB accept absolutely no liability for any financial losses incurred from using, copying, or modifying these structural templates. 
-
-Proprietary trading logic is strictly withheld. Users must build their own algorithms at their own risk. Always do your own research (DYOR) and strictly utilize paper-trading environments before deploying real capital.
+## 📜 Disclaimer
+This software is for educational and research purposes only. Do not deploy this open-source shell with live capital without extensive modification and paper testing. Sconzz LAB is not responsible for any financial losses.
