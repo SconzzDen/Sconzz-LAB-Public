@@ -29,3 +29,11 @@ The Sconzz LAB ecosystem is split into three main layers:
 **Environment:** Lightweight Linux/Termux headless server.
 
 *This repository serves as a structural demonstration of the Sconzz LAB trading architecture.*
+
+---
+## ⚠️ Legal Disclaimer
+**Sconzz LAB architecture is provided for educational and structural demonstration purposes only.**
+
+This repository does not constitute financial advice, investment advice, or trading advice. Trading cryptocurrencies, especially using high-leverage perpetual contracts (Perps), involves a significant risk of capital loss. The creators of Sconzz LAB accept absolutely no liability for any financial losses incurred from using, copying, or modifying these structural templates. 
+
+Proprietary trading logic is strictly withheld. Users must build their own algorithms at their own risk. Always do your own research (DYOR) and strictly utilize paper-trading environments before deploying real capital.
