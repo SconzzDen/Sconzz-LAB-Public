@@ -1,31 +1,31 @@
-# ⚡ Sconzz LAB | The Mobile Quant Architecture
+# ⚡ Sconzz LAB | Solana Quantitative Architecture
 
-**Welcome to Sconzz LAB.** This repository is a public showcase of a high-frequency trading floor designed to scalp the Solana (SOL/USDT) perpetual futures market. 
+A complete, high-frequency quantitative trading floor built for the SOL/USDT market. Engineered by **Sconzz LAB**, this architecture features a Node.js execution engine, two distinct Python-based trading algorithms, and a built-in hyper-optimization lab for continuous backtesting. 
 
-The entire architecture is heavily optimized to run seamlessly in the background of a mobile device via Termux. No desktop. No cloud servers. Just pure algorithmic execution on the go.
-
-### 🏛️ The Architecture
-- **20x Sniper Engine:** Mean-reversion Python bot hunting volatility expansions.
-- **100x Degen Engine:** High-speed momentum tracker.
-- **Node.js Floor:** Headless execution server routing via Jupiter Perps.
-- **Proprietary Optimizer (Black-Boxed):** A custom historical backtesting laboratory I built to stress-test my personal parameters. *Note: This is strictly for my private use and is not included in this repository.*
+📍 **Base:** London, UK 🇬🇧
 
 ---
 
-### ⏱️ 10-Minute Quickstart Guide
-1. **Clone the Repo:** `git clone https://github.com/SconzzDen/Sconzz-LAB-Public.git`
-2. **Install Dependencies:** `pip install -r requirements.txt` *(Note: create your own based on your indicators)*
-3. **Configure Environment:** Add your Telegram Bot Token to the script.
-4. **Run the Bot:** `python public_sniper_template.py`
+## 🏗️ System Architecture
 
-### 🛑 CRITICAL: Paper Trading vs Live Mode
-By default, this code ships in **TEST MODE** (`PAPER_TRADING = True`). It will only print simulated trades to your console. **No capital is at risk.**
+The Sconzz LAB ecosystem is split into three main layers:
+1. **The Execution Engine (server.js):** A Node.js backend that handles transaction routing, metric tracking, and the "Paper Trading" safety switch.
+2. **The 100x Degen Bot (strategy_template.py):** An aggressive, 3-minute timeframe mean-reversion algorithm designed for choppy market regimes.
+3. **The 20x Sniper Bot (strategy_template.py):** A highly precise, 5-minute timeframe liquidity sweep algorithm designed for institutional-style scalping.
 
-To go live with real funds:
-1. Open `public_sniper_template.py`.
-2. Find line 14: `PAPER_TRADING = True`.
-3. Change it to `PAPER_TRADING = False`.
-4. Inject your exchange API keys into the `execute_trade` function.
+*(Note: Proprietary alpha, optimization parameters, and API keys are strictly vaulted and not included in this public repository).*
 
-### ⚠️ Disclaimer
-**This repository contains structural templates only.** The proprietary trading logic (Alpha) and my personal optimization engines have been removed. You **must** write your own mathematical indicators and build your own backtester to prove your edge before putting capital at risk. I am not responsible for any financial losses incurred by using this framework. 
+### 🚀 Key Features
+* **Dual-Speed Risk Manager:** Bots operate in "Hunter Mode" (checking charts every 15s) until they enter a trade, instantly shifting into "Sniper Mode" (checking live price every 2s) to execute risk management with absolute precision.
+* **Auto-Compounding:** Automatically reinvests 50% of trade profits into the base trade size for exponential capital growth.
+* **Hyper-Optimization Lab:** Custom Python scripts that backtest hundreds of configurations against thousands of historical candles to find the highest-yielding statistical edge.
+* **Telegram Integration:** Real-time trade execution alerts, status polling, and live PnL tracking.
+
+---
+
+## 🛠️ Infrastructure
+
+**Tech Stack:** Node.js | Python 3 | PM2 | Pandas-TA
+**Environment:** Lightweight Linux/Termux headless server.
+
+*This repository serves as a structural demonstration of the Sconzz LAB trading architecture.*
