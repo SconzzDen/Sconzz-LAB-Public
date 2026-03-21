@@ -1,18 +1,15 @@
-/**
- * ⚡ SCONZZ LAB | Execution Engine (Public Template)
- * --------------------------------------------------
- * This is a sanitized template of the Node.js routing engine.
- * Users must implement their own exchange API or Web3 logic.
- */
 const express = require('express');
 const app = express();
 app.use(express.json());
 
-app.post('/execute', (req, res) => {
-    const { bot, pair, action, leverage } = req.body;
-    console.log(`[!] SIGNAL RECEIVED: ${bot} executing ${action} on ${pair}`);
-    // INSERT YOUR EXCHANGE/WEB3 EXECUTION LOGIC HERE
-    res.json({ status: 'success', routed: true });
+// Sconzz Lab V4 Public Router Shell
+// NOTE: Web3/Blockchain signing logic and Jupiter SDKs are redacted.
+
+app.post('/trade', (req, res) => {
+    const { action, size } = req.body;
+    console.log(`[V4 PUBLIC] Signal Received: ${action} | Size: ${size}`);
+    res.json({ success: true, status: "Template Signal Processed" });
 });
 
-app.listen(3000, () => console.log("⚡ Sconzz LAB Execution Engine Online"));
+const PORT = 3000;
+app.listen(PORT, () => console.log('⚡ Sconzz LAB Public Router | Port 3000'));

@@ -1,19 +1,16 @@
-# ⚡️ Sconzz LAB: Open-Source Execution Shell (Legacy V3)
+# ⚡ SCONZZ LAB | V4 Public Execution Shell
 
-> **"Patience is a weapon. Speed is the execution."**
+Welcome to the V4 public framework. This repository contains the sanitized foundational templates for the Sconzz Lab algorithmic trading architecture.
 
-Welcome to the Sconzz LAB public Showroom. This repository contains our baseline, open-source algorithmic trading shell, designed for quantitative research and structural backtesting.
+### ⚠️ CLASSIFIED ARCHITECTURE NOTICE
+This is the **Public Edition**. To protect the Sconzz Lab quantitative edge and the $100 private war chest, the following features are strictly redacted:
+- **Geometric Compounding:** Dynamic position sizing math is removed.
+- **Institutional Momentum:** Advanced ADX/ATR trailing stop logic is removed.
+- **Web3 Execution:** Jupiter V6 Anchor serialization and private key signers are removed.
+- **Node Telemetry:** Private Telegram UI bridges are removed.
 
-## 🏛️ The Architecture
-This public repository features our legacy V3 structural framework. It utilizes a standard, synchronous Python execution loop suitable for basic technical analysis (RSI/Bollinger) and integration with standard CEX testnets.
+### 📁 INCLUDED TEMPLATES
+1. \`strategy_template.py\`: Python engine utilizing \`pandas-ta\` with strict \`iloc[-2]\` candle closing to eliminate look-ahead bias.
+2. \`server_template.js\`: Express.js router skeleton for handling execution signals.
 
-## ⚠️ The V4 Hybrid Grid (VIP Only)
-While this public shell is fully functional for educational purposes, **it is not the architecture currently trading live on our node.** To eliminate PM2 routing latency and Node.js overhead, Sconzz LAB operates on a proprietary **V4 Flat-Grid Architecture**. The live system executes on a decentralized mobile-node, utilizing:
-* **100x Rubber Band (Async):** High-tension mean-reversion engine.
-* **V4 Scalper:** Sub-second liquidity sweep detection.
-* **Bare-Metal Routing:** Zero-directory-friction for instantaneous Solana Mainnet execution via Jupiter Perps.
-
-*Note: The V4 engines and auto-compounding telemetry scripts are strictly reserved for the Sconzz LAB VIP Command Channel. We do not provide public support for optimizing this V3 shell for sub-second execution.*
-
-## 📜 Disclaimer
-This software is for educational and research purposes only. Do not deploy this open-source shell with live capital without extensive modification and paper testing. Sconzz LAB is not responsible for any financial losses.
+**Stay Sharp. - Sconzz**
