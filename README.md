@@ -1,16 +1,39 @@
-# ⚡ SCONZZ LAB | V4 Public Execution Shell
+# ⚡ SCONZZ LAB | Autonomous Mobile Execution Node
 
-Welcome to the V4 public framework. This repository contains the sanitized foundational templates for the Sconzz Lab algorithmic trading architecture.
+A proprietary quantitative trading architecture engineered specifically for zero-latency execution within a heavily constrained mobile environment (Android / Termux). 
 
-### ⚠️ CLASSIFIED ARCHITECTURE NOTICE
-This is the **Public Edition**. To protect the Sconzz Lab quantitative edge and the $100 private war chest, the following features are strictly redacted:
-- **Geometric Compounding:** Dynamic position sizing math is removed.
-- **Institutional Momentum:** Advanced ADX/ATR trailing stop logic is removed.
-- **Web3 Execution:** Jupiter V6 Anchor serialization and private key signers are removed.
-- **Node Telemetry:** Private Telegram UI bridges are removed.
+### ⚙️ Infrastructure Overview
+This node is built to operate continuously with a 0% CPU idle footprint and strictly capped memory allocations, bypassing the thermal and processing limits of mobile hardware.
 
-### 📁 INCLUDED TEMPLATES
-1. \`strategy_template.py\`: Python engine utilizing \`pandas-ta\` with strict \`iloc[-2]\` candle closing to eliminate look-ahead bias.
-2. \`server_template.js\`: Express.js router skeleton for handling execution signals.
+* **Runtime Environment:** Python 3.11 asynchronous event loops (`asyncio`, `httpx`).
+* **Daemon Management:** PM2 (Node.js) enforcing strict hardware resource isolation.
+* **Telemetry & UI:** Custom-built asynchronous Telegram bridge for remote node monitoring, delivering high-impact, real-time visual telemetry.
 
-**Stay Sharp. - Sconzz**
+> **CLASSIFIED:** The core algorithmic logic, quantitative matrices, adaptive memory arrays, and execution routing protocols are strictly proprietary. This repository contains only the structural shell to demonstrate asynchronous mobile infrastructure. 
+
+---
+
+### 🤝 A Gift from the Lab: The Alpha Teaser
+If you are new to algorithmic trading, looking at asynchronous execution nodes can be intimidating. I believe in proving that automated execution works. 
+
+Below, you will find `public_starter_bot.py`. 
+This is a bare-minimum, entry-level script. It trades basic spot markets on a 15-minute timeframe using standard RSI boundaries. It is fundamentally simple, but it is a real, working foundation. 
+
+Play with it. Backtest it. Learn how pandas-ta connects to exchange data. Watch it capture small wins. 
+
+**But understand this:** This public starter bot is a tricycle. The private Sconzz Lab V4.2 node runs on a mobile Termux environment, executing 100x high-frequency scalps via adaptive, self-shifting volatility matrices. The true edge is heavily classified. 
+
+Start here. Build your skills. Welcome to the grid. 🚀
+
+### ⚡ THE V4.2 ARCHITECTURE IN ACTION (GALLERY)
+The private node operates silently in the background of a heavily classified mobile environment, simulating live Return on Equity (ROE) using a custom Tactical KOL UI. 
+
+*Zero capital at risk. Pure algorithmic alpha generation.*
+
+| 🐺 100x DEGEN (1m Scalper) | 🎯 20x SNIPER (5m Reversion) | 🦅 V4 APEX (5m Momentum) |
+|:---:|:---:|:---:|
+| <img src="IMAGE_URL_HERE" width="250"> | <img src="IMAGE_URL_HERE" width="250"> | <img src="IMAGE_URL_HERE" width="250"> |
+| **Status:** Adaptive 1.0x Matrix Active | **Status:** 40/60 Range Bounds | **Status:** 1.8x ATR Shield Deployed |
+| *Capturing sub-minute structural breaks.* | *Executing localized exhaustion snipes.* | *Riding institutional volume waves.* |
+
+> **"Cipher handles the math. Oracle handles the hype. The Architect runs the grid."**
